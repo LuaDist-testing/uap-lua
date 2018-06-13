@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "uap-lua"
-version = "1.0-1"
+version = "1.1-1"
 -- LuaDist source
 source = {
   url = "git://github.com/LuaDist-testing/uap-lua.git",
-  tag = "1.0-1"
+  tag = "1.1-1"
 }
 -- Original source
 -- source = {
 --    url = "git://github.com/megafono/uap-lua.git",
---    tag = "v1.0"
+--    tag = "v1.1"
 -- }
 description = {
    summary = "User Agent Parser in lua",
@@ -29,5 +29,5 @@ build = {
      uap = "src/user_agent_parser.lua",
    },
 
-   copy_directories = { "doc", "test", "vendor/uap-core" }
+   copy_directories = { "doc", "test", "vendor/uap-core", "example" }
 }
