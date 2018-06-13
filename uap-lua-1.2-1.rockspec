@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "uap-lua"
-version = "1.1-1"
+version = "1.2-1"
 -- LuaDist source
 source = {
   url = "git://github.com/LuaDist-testing/uap-lua.git",
-  tag = "1.1-1"
+  tag = "1.2-1"
 }
 -- Original source
 -- source = {
 --    url = "git://github.com/megafono/uap-lua.git",
---    tag = "v1.1"
+--    tag = "v1.2"
 -- }
 description = {
    summary = "User Agent Parser in lua",
@@ -18,7 +18,6 @@ description = {
    license = "MIT"
 }
 dependencies = {
-  "lyaml",
   "lrexlib-pcre2",
   "datafile"
 }
@@ -27,7 +26,9 @@ build = {
 
    modules = {
      uap = "src/user_agent_parser.lua",
+
+     ["uap.patterns"] = "src/patterns.lua"
    },
 
-   copy_directories = { "doc", "test", "vendor/uap-core", "example" }
+   copy_directories = { "doc", "test", "example" }
 }
